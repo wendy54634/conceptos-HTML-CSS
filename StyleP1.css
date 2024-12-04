@@ -1,0 +1,146 @@
+/* Tipografía y reseteo básico */ 
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+  
+  /* Banner principal */
+  .main-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .main-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-content {
+    z-index: 1;
+    max-width: 700px;
+  }
+  
+  .banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    padding: 15px 30px;
+    background-color: #9c22fff0;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 5s ease;
+
+  }
+  
+  .btn-primary:hover {
+    background-color: #e77ee7;
+  }
+  
+  /* Sección de Carrusel */
+  .carousel-section {
+    width: 100;
+    height: auto;
+    display: block;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .carousel-section h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .carousel img {
+    
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: auto;
+    
+  }
+  
+  /* Sección de Información */
+  .info-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .info-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .info-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  .btn-secondary {
+    padding: 10px 25px;
+    background-color: #8232b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 5s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d21ab1;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .main-banner h1 {
+      font-size: 64px;
+    }
+  
+    .main-banner p {
+      font-size: 24px;
+    }
+  
+    .info-section p {
+      font-size: 20px;
+    }
+  }
+  
+  
+  

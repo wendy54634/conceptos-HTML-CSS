@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="200">
+  <title>Tecnología e Inteligencia Artificial</title>
+  <link rel="stylesheet" href="StyleP1.css">
+  <!-- Enlace a un archivo CSS para un carrusel de fotos (pueden usar un plugin como slick.css o similar) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <!-- Enlace a un archivo CSS para un carrusel de fotos (Slick Carousel) -->
+  
+</head> 
+<body>
+  <!-- Banner principal -->
+  <header class="main-banner">
+    <div class="banner-content">
+      <h1>El Futuro de la Tecnología y la Inteligencia Artificial</h1>
+      <p>Descubre cómo la IA está transformando el mundo en que vivimos.</p>
+      <a href="Pagina2.html" class="btn-primary">Explorar Más</a>
+    </div>
+  </header>
+ <!-- carusel imagen-->
+  <section class="carousel-section">
+    <h2>Avances en la Inteligencia Artificial</h2>
+    <div class="carousel">
+      <div><img src="media/imagen1.jpg" alt="Avance IA 1"></div>
+      <div><img src="media/imagen2.jpg" alt="Avance IA 2"></div>
+      <div><img src="media/imagen3.jpg" alt="Avance IA 3"></div>
+      <div><img src="media/imagen4.jpg" alt="Avance IA 4"></div>
+      <div><img src="media/imagen5.jpg" alt="Avance IA 5"></div>
+    </div>
+  </section>
+  
+
+  <!-- Sección de contenido informativo -->
+  <section class="info-section">
+    <h2>Impacto de la IA en la Tecnología Actual</h2>
+    <p>
+      La inteligencia artificial (IA) ha revolucionado diversos sectores como la medicina, 
+      la automoción, y la gestión de datos. Hoy en día, sus aplicaciones están redefiniendo 
+      el concepto de eficiencia y precisión.
+    </p>
+    <a href="Pagina2.html" class="btn-secondary">Leer Más</a>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Tecnología e Inteligencia Artificial. ADSO todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts para el carrusel -->
+  <!-- Scripts para jQuery y Slick Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        
+      });
+    });
+  </script>
+  
+</body>
+</html>
+
